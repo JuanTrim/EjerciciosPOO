@@ -21,6 +21,10 @@ public class Ejercicio10 {
         System.out.println("-------------------------------");
         as.ordenarArray(a);
         
+        as.mostrarArrays(a.getArray(), a.getArray2());
+        
+    
+        
         
         
         

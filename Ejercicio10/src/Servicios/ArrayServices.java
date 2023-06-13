@@ -1,6 +1,7 @@
 
 package Servicios;
 import Entidades.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -23,20 +24,39 @@ public class ArrayServices {
     }
     
     public void ordenarArray(Array a){
-        int aux = 0;
         for (int i = 0; i < 50; i++) {
-            aux = i;
-            if(array.Array[aux] > array.Array[aux+1]){
-                array.Array[aux] = array.Array[aux+1];
-                array.Array[aux+1] = array.Array[aux];
-                
-                
-                        
+            Arrays.sort(a.getArray());
+            
+            if (i < 10){
+                a.setArray2I(a.getArray(), i);
+            }else if( i < 20){
+                 a.setArray2I(0.5, i);
             }
-            System.out.print(array.Array[i]);
+            
+            
+            
+        }
+       
+            
+        }
+    public void mostrarArrays(double[] a, double[] a2){
+        for(int i = 0; i <  50 ; i++) {
+            System.out.print(" " + array.Array[i] + " "); 
         }
         System.out.println("");
+        for(int i = 0; i <  20 ; i++) {
+            System.out.print( " " +array.Array2[i] + " "); 
+        }
+        System.out.println("");
+        
+        
     }
+
+  
+    
+    
+    
+    
     
     
     

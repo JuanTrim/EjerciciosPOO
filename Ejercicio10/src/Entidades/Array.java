@@ -3,8 +3,8 @@ package Entidades;
 
 
 public class Array {
-    public double Array [] = new double[50];
-    public double Array2[] = new double[20];
+    public double[] Array  = new double[50];
+    public double[] Array2 = new double[20];
 
     public Array() {
         
@@ -31,6 +31,15 @@ public class Array {
 
     public void setArray2(double[] Array2) {
         this.Array2 = Array2;
+    }
+    public void setArrayI(double[] Array2, int i) {
+        this.Array[i] = Array[i];
+    }
+    public void setArray2I(double[] Array2, int i) {
+        this.Array2[i] = Array2[i];
+    }
+    public void setArray2I(double d, int i) {
+        this.Array2[i] = d;
     }
 
   
